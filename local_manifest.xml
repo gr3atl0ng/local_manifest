@@ -8,9 +8,9 @@
   <remote  name="WA"
            fetch="https://github.com/WolfAURman"
            revision="twelve-L"/>
-
+  
  <!-- Device Trees -->
-  <project path="device/xiaomi/lava" name="corvus_android_device_xiaomi_lava" remote="WA" />
+  <project path="device/xiaomi/lava" name="android_device_xiaomi_lava" remote="WA"/>
   <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="Redmi-MT6768" revision="lineage-19.1"/>
  
  <!-- Kernel -->
@@ -24,7 +24,7 @@
   <project path="device/mediatek/sepolicy_vndr" name="CipherOS/android_device_mediatek_sepolicy_vndr" remote="github" revision="twelve-L"/>
 
  <!-- Additional -->
-  <remove-project name="android_frameworks_opt_telephony" path="frameworks/opt/telephony"/>
+  <remove-project name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony"/>
   <project path="frameworks/opt/telephony" name="PixelPlusUI/frameworks_opt_telephony" remote="github" revision="sv2"/>
 
   <remove-project name="platform/frameworks/opt/net/ims"  path="frameworks/opt/net/ims"/>
